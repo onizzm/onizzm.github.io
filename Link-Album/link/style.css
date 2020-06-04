@@ -1,0 +1,232 @@
+h1 
+{
+	text-align: center;
+}
+
+body
+{
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center; 
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2
+{
+	text-align: center;
+}
+
+img.cover
+{
+	width: 350px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+img.title
+{
+	width: 320px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -19px;
+	position: relative;
+	z-index: 1;
+}
+
+
+#follow
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	width: 300px;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+.instagram a
+{
+	display: block;
+	height: 40px;
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background:url(image/instagram2.png) no-repeat; 
+	background-position: center;
+	background-size: 100%;
+	border: none;
+}
+
+.instagram a:hover
+{
+	transition: 0.2s;
+	background:url(image/instagram.png);
+	background-position: center;
+	background-size: 100%;
+}
+
+.mail a
+{
+
+	display: block;
+	height: 40px;
+	width: 40px;
+	margin-left: 30px;
+	margin-right: auto;
+	background:url(image/mail.png) no-repeat; 
+	background-position: center;
+	background-size: 100%;
+	border: none;
+}
+
+.mail a:hover
+{
+	transition: 0.2s;
+	background:url(image/mail2.png);
+	background-position: center;
+	background-size: 100%;
+}
+
+
+
+#contback
+{
+	/*box-shadow: 3px 3px 3px black ;*/
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	margin-right: auto; 
+	margin-left: auto;
+	/*background:url(image/bck-tabl.png);*/
+	background-color: rgb(35, 35, 35, 1);
+	background-position: center;
+	background-size: 550px; 
+	margin-bottom: 100px;
+	position: relative;
+	z-index: 0;
+}
+
+#conteneur
+{
+	/*box-shadow: 0px -3px 3px black inset;*/
+	display: flex;
+	width: 300px;
+	border-top: 1px solid;
+	border-color: rgb(200, 200, 200, 0.3);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	justify-content: space-between;
+}
+
+#conteneur:hover
+{
+	transition: 0.2s;
+	background-color: rgb(200, 200, 200, 0.3);
+}
+
+#conteneur1
+{
+	/*box-shadow: 0px -3px 10px black inset;*/
+	display: flex;
+	width: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	justify-content: space-between;
+}
+
+#conteneur1:hover
+{
+	transition: 0.2s;
+	background-color: rgb(200, 200, 200, 0.3);
+}
+
+
+
+.logo-dst /* element1*/
+{
+	height: 25px;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.bouton-play a 
+{
+	transition: 0.5s;
+	display:block;
+	height:40px;
+	width: 67px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background:url(image/bouton.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+	border: none;
+}
+
+.bouton-play a:hover 
+{
+	transition: 0.2s;
+	background:url(image/bouton3.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.bouton-play a:active 
+{
+	transition: none;
+	background:url(image/bouton2.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.bouton-download a 
+{
+	transition: 0.5s;
+	display:block;
+	height: 40px;
+	width: 102px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background:url(image/download.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+	border: none;
+}
+
+
+.bouton-download a:hover 
+{
+	transition: 0.2s;
+	background:url(image/download3.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.bouton-download a:active 
+{
+	transition: none;
+	background:url(image/download2.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+
+
+
+
