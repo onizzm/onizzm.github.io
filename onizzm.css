@@ -1,3 +1,21 @@
+@font-face {
+	font-family: "Orkney";
+	src: url('orkney-regular.ttf');
+}
+
+@font-face {
+	font-family: "Orkney";
+	font-style: medium;
+	src: url('orkney-medium.ttf');
+}
+
+@font-face {
+	font-family: "Orkney";
+	font-style: bold;
+	src: url('orkney-bold.ttf');
+}
+
+
 html
 {
 	height: 100%;
