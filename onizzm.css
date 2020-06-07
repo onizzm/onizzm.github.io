@@ -19,6 +19,13 @@
 html
 {
 	height: 100%;
+	/*overflow: scroll;*/
+}
+
+p
+{
+	margin: 0px;
+	padding: 0px;
 }
 
 body
@@ -41,8 +48,8 @@ h1
 	z-index: -1;
 	top: 0px;
 	left: 0px;
-	height: 100%;
-	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
 	background:url(images/background.png);
 	background-size: auto 100%;
 	background-position: center;
@@ -89,7 +96,6 @@ h3
 
 #contfollow
 {
-	/*height: 30%;*/
 	height: 30vh;
 	top: 10px;
 	right: 10px;
@@ -113,7 +119,6 @@ h3
 
 #contnav
 {
-	height: 30%;
 	position: fixed;
 	top: 3px;
 	left: 3px;
@@ -213,8 +218,8 @@ h3
 	outline: 0;
 	transition: 0.3s;
 	display: block;
-	width: 20vh;
-	height: 8vh;
+	min-width: 20vh;
+	min-height: 8vh;
 	margin-left: auto;
 	margin-right: auto;
 	background:url(images/boutons/listen.png) no-repeat;
