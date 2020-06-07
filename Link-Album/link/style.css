@@ -1,64 +1,83 @@
+@font-face {
+	font-family: "orkney";
+	src: url('orkney-regular.ttf');
+}
+
+@font-face {
+	font-family: "orkney";
+	font-style: medium;
+	src: url('orkney-medium.ttf');
+}
+
+@font-face {
+	font-family: "orkney";
+	font-style: bold;
+	src: url('orkney-bold.ttf');
+}
+
+
+
+
 h1 
 {
 	text-align: center;
 }
 
+html
+{
+	height: 100%;
+}
+
 body
 {
-	background-size: 100%;
-	background-attachment: fixed;
-	background-position: center; 
-	margin-top: 0px;
-	margin-bottom: 0px;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
 }
 
 h2
 {
+	font-family: orkney;
 	text-align: center;
+	vertical-align: middle;
+	line-height: 4vh;
+	color: white;
+	font-size: 2vh;
+}
+
+.background
+{
+	position: fixed;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-size: 200% auto;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 img.cover
 {
-	width: 350px;
+	width: 40vh;
 	display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 10px;
 }
 
-img.title
-{
-	width: 320px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: -19px;
-	position: relative;
-	z-index: 1;
-}
-
-
-#follow
-{
-	display: flex;
-	flex-direction: row;
-	margin-left: auto;
-	margin-right: auto;
-	height: 50px;
-	width: 300px;
-	margin-bottom: 30px;
-	justify-content: center;
-}
 
 .instagram a
 {
 	display: block;
-	height: 40px;
-	width: 40px;
+	height: 7vh;
+	width: 7vh;
 	margin-left: auto;
 	margin-right: auto;
-	background:url(image/instagram2.png) no-repeat; 
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background:url(image/instagram2.png) no-repeat;
 	background-position: center;
 	background-size: 100%;
 	border: none;
@@ -72,58 +91,38 @@ img.title
 	background-size: 100%;
 }
 
-.mail a
+.title
 {
-
-	display: block;
-	height: 40px;
-	width: 40px;
-	margin-left: 30px;
-	margin-right: auto;
-	background:url(image/mail.png) no-repeat; 
-	background-position: center;
-	background-size: 100%;
-	border: none;
-}
-
-.mail a:hover
-{
-	transition: 0.2s;
-	background:url(image/mail2.png);
-	background-position: center;
-	background-size: 100%;
-}
-
-
-
-#contback
-{
-	/*box-shadow: 3px 3px 3px black ;*/
-	display: flex;
-	flex-direction: column;
-	width: 320px;
-	margin-right: auto; 
+	display: table;
+	width: 50vh;
 	margin-left: auto;
-	/*background:url(image/bck-tabl.png);*/
-	background-color: rgb(35, 35, 35, 1);
-	background-position: center;
-	background-size: 550px; 
-	margin-bottom: 100px;
-	position: relative;
-	z-index: 0;
+	margin-right: auto;
+}
+
+.table
+{
+	display: table-cell;
+	height: 12vh;
+	background-color: rgb(30, 30, 30)
+}
+
+.contback
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vh;
+	background-color: rgb(30, 30, 30)
 }
 
 #conteneur
 {
-	/*box-shadow: 0px -3px 3px black inset;*/
+	transition: 0.2s;
 	display: flex;
-	width: 300px;
+	align-items: center;
+	width: 50vh; 
+	height: 10vh;
 	border-top: 1px solid;
-	border-color: rgb(200, 200, 200, 0.3);
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	background-color: rgb(30, 30, 30);
 	justify-content: space-between;
 }
 
@@ -133,45 +132,23 @@ img.title
 	background-color: rgb(200, 200, 200, 0.3);
 }
 
-#conteneur1
+.logo-dst
 {
-	/*box-shadow: 0px -3px 10px black inset;*/
-	display: flex;
-	width: 300px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	justify-content: space-between;
-}
-
-#conteneur1:hover
-{
-	transition: 0.2s;
-	background-color: rgb(200, 200, 200, 0.3);
-}
-
-
-
-.logo-dst /* element1*/
-{
-	height: 25px;
-	margin-left: 10px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	height: 3vh;
+	margin-left: 2vh;
 }
 
 .bouton-play a 
 {
-	transition: 0.5s;
-	display:block;
-	height:40px;
-	width: 67px;
+	display: table-cell;
+	align-content: center;
+	transition: 0.2s;
+	height: 6vh;
+	width: 10vh;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	background:url(image/bouton.png) no-repeat;
+	background:url(image/bouton.png);
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
 	border: none;
@@ -195,10 +172,12 @@ img.title
 
 .bouton-download a 
 {
+	display: table-cell;
+	align-content: center;
 	transition: 0.5s;
 	display:block;
-	height: 40px;
-	width: 102px;
+	height: 8vh;
+	width: 15vh;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
@@ -224,6 +203,11 @@ img.title
 	background:url(image/download2.png) no-repeat;
 	background-position: center;
 	background-size: 100%;
+}
+
+.marge
+{
+	height: 200px;
 }
 
 
