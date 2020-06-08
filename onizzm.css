@@ -124,8 +124,8 @@ h3
 {
 	z-index: 1;
 	position: fixed;
-	top: 3px;
-	left: 3px;
+	top: 1px;
+	left: 1px;
 }
 
 
@@ -138,8 +138,6 @@ h3
 	outline: 0;
 	background: none; 
 	border: none;
-	margin-right: 5px;
-	margin-left: 5px;
 	font-size: 4vh;
 	font-family: orkney;
 	text-align: center;
@@ -325,6 +323,17 @@ h3
 	box-shadow: 0px 0px 8px 1px black /*rgba(150, 0, 0)*/;
 }
 
+h4
+{
+	font-family: orkney;
+	color: white;
+	font-size: 3vh;
+	text-align: center;
+	margin: 0px;
+	border: none;
+	text-decoration: none;
+}
+
 #contact
 {
 	z-index: 0;
@@ -332,3 +341,36 @@ h3
 	height: 100vh;
 	background-color: rgb(0, 0, 0);
 }
+
+.contactlogo
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	height: 20vh;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5vh;
+}
+
+.logocontact
+{
+	height: 15vh;
+}
+
+.liencontact
+{
+	display: block;
+	/*height: 20vh;*/
+	text-decoration: none;
+	font-family: orkney;
+	color: white;
+	font-size: 3vh;
+	text-align: center;
+	margin: 0px;
+	border: none;
+	margin: 30px;
+}
+
+
