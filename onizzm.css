@@ -1,20 +1,22 @@
-@font-face {
+@font-face 
+{
 	font-family: "orkney";
 	src: url('orkney-regular.ttf');
 }
 
-@font-face {
+@font-face 
+{
 	font-family: "orkney";
 	font-style: medium;
 	src: url('orkney-medium.ttf');
 }
 
-@font-face {
+@font-face 
+{
 	font-family: "orkney";
 	font-style: bold;
 	src: url('orkney-bold.ttf');
 }
-
 
 html
 {
@@ -45,12 +47,12 @@ h1
 .background
 {
 	position: fixed;
-	z-index: -1;
+	z-index: -2;
 	top: 0px;
 	left: 0px;
 	min-height: 100%;
 	min-width: 100%;
-	background:url(images/background.png);
+	background:url(images/background.jpg);
 	background-size: auto 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -96,6 +98,7 @@ h3
 
 #contfollow
 {
+	z-index: 0;
 	height: 30vh;
 	top: 10px;
 	right: 10px;
@@ -119,6 +122,7 @@ h3
 
 #contnav
 {
+	z-index: 1;
 	position: fixed;
 	top: 3px;
 	left: 3px;
@@ -129,12 +133,11 @@ h3
 .navbouton button
 {
 	transition: 0.2s;
-	height: 10px;
+	height: 5vh;
 	cursor: pointer;
 	outline: 0;
 	background: none; 
 	border: none;
-	margin: 5px;
 	margin-right: 5px;
 	margin-left: 5px;
 	font-size: 4vh;
@@ -197,7 +200,7 @@ h3
 .contcenter
 {
 	margin-top: 45vh;	
-	margin-bottom: 60vh;
+	margin-bottom: 120vh;
 	margin-right: auto;
 	margin-left: auto;
 	/*border: white solid;*/
@@ -299,7 +302,9 @@ h3
 {
 	position: absolute;
 	transition: 0.3s;
-	opacity: 0.7;
+	opacity: 1;
+	background-color: rgb(256, 256, 256, 0.6);
+	/*opacity: 0.7;*/
 }
 
 #contwallpapper
@@ -318,4 +323,12 @@ h3
 	height: 200px;
 	margin: 15px;
 	box-shadow: 0px 0px 8px 1px black /*rgba(150, 0, 0)*/;
+}
+
+#contact
+{
+	z-index: 0;
+	position: relative;
+	height: 100vh;
+	background-color: rgb(0, 0, 0);
 }
