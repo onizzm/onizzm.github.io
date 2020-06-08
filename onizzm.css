@@ -21,7 +21,7 @@
 html
 {
 	height: 100%;
-	/*overflow: scroll;*/
+	overflow: scroll;
 }
 
 p
@@ -88,7 +88,7 @@ h3
 	font-family: orkney;
 	text-align: center;
 	vertical-align: middle;
-	color: rgb(256, 0, 120);
+	color: rgb(230, 0, 90);
 	font-style: none;
 	letter-spacing: 9px;
 	line-height: 50px;
@@ -290,7 +290,7 @@ h3
 	display: table;
 	transition: 0.3s;
 	position: absolute;
-	background-color: rgb(256, 256, 256);
+	background-color: rgb(0, 0, 0);
 	width: 300px;
 	height: 300px;
 	opacity: 0;
@@ -301,7 +301,7 @@ h3
 	position: absolute;
 	transition: 0.3s;
 	opacity: 1;
-	background-color: rgb(256, 256, 256, 0.6);
+	background-color: rgb(256, 256, 256, 0.7);
 	/*opacity: 0.7;*/
 }
 
