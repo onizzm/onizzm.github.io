@@ -77,7 +77,7 @@ img.cover
 	margin-right: auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	background:url(image/instagram2.png) no-repeat;
+	background:url(image/instagram.png) no-repeat;
 	background-position: center;
 	background-size: 100%;
 	border: none;
@@ -86,9 +86,10 @@ img.cover
 .instagram a:hover
 {
 	transition: 0.2s;
-	background:url(image/instagram.png);
+	background:url(image/instagram2.png);
 	background-position: center;
-	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: 70%;
 }
 
 .title
