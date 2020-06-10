@@ -21,7 +21,7 @@
 html
 {
 	height: 100%;
-	overflow: scroll;
+	/*overflow: scroll;*/
 }
 
 p
@@ -124,8 +124,9 @@ h3
 {
 	z-index: 1;
 	position: fixed;
-	top: 1px;
-	left: 1px;
+	top: 10px;
+	left: 10px;
+	margin: 0px;
 }
 
 
