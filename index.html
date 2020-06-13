@@ -15,6 +15,17 @@
 			return false;
 		});
 	});
+
+
+	function afficher() {
+		var div = document.getElementById("divmenu");
+		if (div.style.display == "none"){
+			div.style.display = "block";
+		} else {
+			div.style.display = "none";
+		}
+
+	}
 </script>
 
 
@@ -56,9 +67,12 @@
 		</div>
 
 		<div id="contnav">
-			<div class="navbouton"><button class="js-scrollTo" href="#page1"> Musique </button></div>
-			<div class="navbouton"><button class="js-scrollTo" href="#page2"> Galerie </button></div>
-			<div class="navbouton"><button class="js-scrollTo" href="#contact"> Contact </button></div>
+			<div><button class="menu" onclick="afficher()"><img style="width: 5vh; cursor: pointer;" src="images/icon/menu.png"></button></div>
+			<div id="divmenu" style="display: none;">
+				<div class="navbouton"><button class="js-scrollTo" href="#page1"> Musique </button></div>
+				<div class="navbouton"><button class="js-scrollTo" href="#page2"> Galerie </button></div>
+				<div class="navbouton"><button class="js-scrollTo" href="#contact"> Contact </button></div>
+			</div>
 		</div>
 
 
@@ -67,7 +81,7 @@
 					<img class="contain" src="images/logocenter.png">
 				</div>			
 				<div  class="listen">
-					<button class="js-scrollTo" href="#page1">  </button>
+					<button class="js-scrollTo" href="#page1"> ECOUTER </button>
 				</div>
 			</div>
 
@@ -77,8 +91,8 @@
 			<div id="covermusic">
 				<div>
 					<a class="liencover" href="Link-Album/link/linkpoh.html" target="_blank">
-						<img class="cover" src="images/covers/poh.png" alt="Pursuit of Hapiness">
-					<div class="ecouter">
+						<img class="coverlatest" src="images/covers/poh.png" alt="Pursuit of Hapiness">
+					<div class="ecouterlatest">
 						<h3> Pursuit of Hapiness <br> 2020 </h3>
 					</div>
 						</a>
@@ -120,7 +134,7 @@
 				</div>	
 			</div>
 
-				<div> <a class="toutlessortie" href="musique.html"> Toute les sorties + </a> </div>
+				<a class="toutlessortie" href="musique.html"> Toute les sorties + </a>
 
 		<div id="footpage"> </div>
 		</div>
