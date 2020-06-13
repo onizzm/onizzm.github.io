@@ -177,17 +177,18 @@ h3
 .navbouton button
 {
 	padding: 0px;
-	margin: 0px;
+	margin: 10px;
 	transition: 0.2s;
 	height: 5vh;
 	cursor: pointer;
 	outline: 0;
 	background: none; 
 	border: none;
-	font-size: 4vh;
+	font-size: 6vh;
 	font-family: orkney;
 	text-align: center;
 	color: white;
+
 }
 
 .navbouton button:hover
