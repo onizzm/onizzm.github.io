@@ -4,6 +4,7 @@
 	src: url('orkney-regular.ttf');
 }
 
+
 @font-face 
 {
 	font-family: "orkney";
@@ -32,7 +33,7 @@ p
 
 body
 {
-	min-height: 100%;
+	height: calc(100vh - calc(100vh - 100%))
 	padding: 0px;
 	margin: 0px;
 }
@@ -169,7 +170,7 @@ h3
 }
 
 .retourausite:hover
-{
+{ 
 	color: rgb(230, 0, 90);
 	border-color: rgba(230, 0, 90);
 }
@@ -425,8 +426,27 @@ h3
 {
 	cursor: pointer;
 	height: 200px;
-	margin: 15px;
 	box-shadow: 0px 0px 8px 1px black /*rgba(150, 0, 0)*/;
+}
+
+.margin
+{
+	margin: 15px;
+}
+
+.autor
+{
+	font-family: orkney;
+	font-size: 3vh;
+	color: white;
+	margin-left: 10vw;
+}
+
+.instaeloi
+{
+	text-underline-position: 5px;
+	text-decoration: underline;
+	color: white;
 }
 
 h4
