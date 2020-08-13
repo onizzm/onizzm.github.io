@@ -67,14 +67,22 @@ img.cover
     margin-top: 30px;
 }
 
+.contfollow
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .instagram a
 {
 	display: block;
 	height: 7vh;
 	width: 7vh;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 30px;
+	margin-right: 30px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	background:url(image/instagram1.png) no-repeat;
@@ -87,6 +95,30 @@ img.cover
 {
 	transition: 0.2s;
 	background:url(image/instagram2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+}
+
+.website a
+{
+	display: block;
+	height: 7vh;
+	width: 7vh;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	background:url(image/website.png);
+	background-position: center;
+	background-size: 100%;
+	border: none;
+}
+
+.website a:hover
+{
+	transition: 0.2s;
+	background:url(image/website-hover.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 70%;
