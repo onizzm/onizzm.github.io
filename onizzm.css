@@ -26,7 +26,7 @@ html
 }
 
 p
-{
+{ 
 	margin: 0px;
 	padding: 0px;
 }
@@ -129,6 +129,11 @@ h3
 	cursor: pointer;
 }
 
+#divmenu
+{
+	margin: 0px;
+}
+
 #contnav
 {
 	z-index: 1;
@@ -136,9 +141,6 @@ h3
 	top: 10px;
 	left: 10px;
 	margin: 0px;
-	/*background-color: rgb(0, 0, 0, 0.3);
-	border: solid 1px;
-	border-color: rgba(255, 255, 255, 0.3);*/
 	padding: 10px;
 }
 
@@ -175,7 +177,7 @@ h3
 	border-color: rgba(230, 0, 90);
 }
 
-.navbouton button
+#navbouton button
 {
 	padding: 0px;
 	/*margin: 10px;*/
@@ -187,12 +189,13 @@ h3
 	border: none;
 	font-size: 8vh;
 	font-family: orkney;
-	text-align: center;
+	/*text-align: center;*/
 	color: white;
-
+	/*margin-top: -100px;
+	margin-bottom: -100px;*/
 }
 
-.navbouton button:hover
+#navbouton button:hover
 {
 	transition: 0.2s;
 	color: rgb(256, 0, 120);
