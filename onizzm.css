@@ -277,7 +277,7 @@ h3
 	margin-left: auto;
 	margin-right: auto;
 	color: black;
-	border: black solid 2px;
+	border: black solid 0.4vh;
 	padding-right: 6vh;
 	padding-left: 6vh;
 	padding-top: 2vh;
@@ -502,4 +502,34 @@ h4
 	margin: 30px;
 }
 
+.fichierpdf
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30vh;
+}
 
+.boutonpdf
+{
+	font-family: orkney;
+	text-decoration: none;
+	font-size: 3vh;
+	color: white;
+	cursor: pointer;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border: white solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boutonpdf:hover
+{
+	transition: 0.3s;
+	color: rgba(230, 0, 90);
+	border-color: rgba(230, 0, 90);
+}
