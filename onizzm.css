@@ -71,12 +71,14 @@ h1
 h2
 {
 	display: block;
-	font-size: 30px;
+	margin-top: 10vh;
+	margin-left: 20vh;
+	margin-bottom: 0px;
+	font-size: 50px;
 	font-family: orkney;
-	text-align: center;
 	vertical-align: middle;
 	color: white;
-	letter-spacing: 10px;
+	letter-spacing: 2px;
 	line-height: 50px;
 	text-decoration: none;
 	opacity: 1;
@@ -95,6 +97,27 @@ h3
 	line-height: 50px;
 	text-decoration: none;
 	opacity: 1;
+}
+
+h4
+{
+	font-family: orkney;
+	color: white;
+	font-size: 3vh;
+	text-align: center;
+	margin: 0px;
+	border: none;
+	text-decoration: none;
+}
+
+p
+{
+	font-family: orkney;
+	color: white;
+	font-size: 2vh;
+	margin: 0px;
+	border: none;
+	text-decoration: none;
 }
 
 #contfollow
@@ -452,15 +475,37 @@ h3
 	color: white;
 }
 
-h4
+
+
+#blog
 {
-	font-family: orkney;
+	background-color: rgb(30, 30, 30, 0.7);
+	/*margin-bottom: 150px;*/
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Moi
+{
+
+}
+
+.bio
+{
+	display: block;
+	margin-top: 50px;
+	margin-left: 20vh;
+	margin-right: 20vh;
+	margin-bottom: 0px;
+	font-size: 25px;
+	font-family: orkney-light;
+	vertical-align: middle;
 	color: white;
-	font-size: 3vh;
-	text-align: center;
-	margin: 0px;
-	border: none;
+	letter-spacing: 1px;
+	line-height: 30px;
 	text-decoration: none;
+	opacity: 1;
 }
 
 #contact
