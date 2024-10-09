@@ -16,10 +16,12 @@ p {
 	padding: 0px;
 	font-family: Helvetica Neue;
 	line-height: 140%;
+	font-size: 2vh;
 }
 
 h1 {
 	color: black;
+	max-width: 90vw;
 	font-family: "Junge", cursive;
   	font-style: normal;
 	font-size: 15vh;
