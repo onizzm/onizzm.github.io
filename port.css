@@ -15,7 +15,7 @@ p {
 	margin: 0px;
 	padding: 0px;
 	font-family: Helvetica Neue;
-	line-height: 24px;
+	line-height: 140%;
 }
 
 h1 {
@@ -171,7 +171,6 @@ img {
 
 
 
-
 .minia {
 	min-width: 16vh;
 	min-height: 9vh;
@@ -181,7 +180,15 @@ img {
 }
 
 .YouTube {
-	margin-bottom: 40px;
+	height: 80vh;
+}
+
+iframe[Attributes Style] {
+	height: 80vh;
+}
+
+#yt {
+	height: 80vh;
 }
 
 
