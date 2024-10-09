@@ -11,6 +11,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+body::-webkit-scrollbar {
+    display: none; /* Masque la barre de défilement */
+}
+
 p {
 	margin: 0px;
 	padding: 0px;
