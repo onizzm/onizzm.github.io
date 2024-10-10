@@ -61,3 +61,19 @@ function loader() {
 	const loader = document.getElementById("loader");
 	loader.style.display = 'none';
 }
+
+function setVh() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', setVh);
+window.addEventListener('load', setVh);
+
+
+function setVH() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+
+window.addEventListener('resize', setVH);
+setVH();
