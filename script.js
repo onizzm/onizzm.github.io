@@ -4,6 +4,10 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function hauteur() {
+	const haut = window.innerHeight/100;
+    document.documentElement.style.setProperty('--haut', `${haut}px`);
+}
 
 //
 
