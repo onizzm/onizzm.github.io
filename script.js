@@ -42,7 +42,7 @@ async function animation() {
 		if (bio.style.opacity == 1){
 			bio.style.opacity = 0;
 			baniere.style.opacity = 0;
-			titre.style.top = "0vh"
+			titre.style.top = "calc(var(--haut) * 0)";
 			await sleep(1000);
 			bio.style.display = "none";
 			marge.style.display = "none";
@@ -59,7 +59,7 @@ async function animation() {
 
 		} else {
 			video.style.opacity = 0;
-			titre.style.top = "30vh";
+			titre.style.top = "calc(var(--haut) * 30)";
 			await sleep(500);
 			video.style.display = "none";
 			marge.style.display = "block";
