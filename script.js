@@ -20,6 +20,11 @@ async function animation() {
 		var titre = document.getElementById("titre");
 		var marge = document.getElementById("marge");
 
+		//mettre les transitions//
+		baniere.style.transition = '0.4s';
+		titre.style.transition = '1.5s';
+		video.style.transition = '0.5s';
+
 
 		if (bio.style.opacity == 1){
 			bio.style.opacity = 0;
@@ -35,6 +40,7 @@ async function animation() {
 			video.style.display = "flex";
 			await sleep(400);
 			video.style.opacity = 1;
+			await sleep(500);
 			document.getElementById("titre_bouton").innerHTML = "AFFICHER BIO";
 
 
@@ -47,12 +53,17 @@ async function animation() {
 			bio.style.display = "flex";
 			baniere.style.display = "flex";
 			/*baniere.style.display = "flex";*/
-			await sleep(400);
+			await sleep(500);
 			baniere.style.opacity = 1;
 			bio.style.opacity = 1;
+			await sleep(400);
 			document.body.style.backgroundImage = "none";
 			document.getElementById("titre_bouton").innerHTML = "DECOUVRIR LE PORTFOLIO";
 		}	
+
+		baniere.style.transition = '0s';
+		titre.style.transition = '0s';
+		video.style.transition = '0s';
 
 }
 
