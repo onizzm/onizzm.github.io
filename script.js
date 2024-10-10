@@ -6,6 +6,13 @@ function sleep(ms) {
 
 
 async function animation() {
+
+		window.scrollTo({
+	        top: 0,
+	        behavior: 'auto'
+	    });
+
+
 		var bio = document.getElementById("bio");
 		var baniere = document.getElementById("baniere");
 		/*var body = document.getElementByName("body")*/
@@ -70,10 +77,12 @@ function setVh() {
 window.addEventListener('resize', setVh);
 window.addEventListener('load', setVh);
 
-
+/**/
 function setVH() {
     document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
 }
 
 window.addEventListener('resize', setVH);
 setVH();
+
+/**/
