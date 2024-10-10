@@ -19,14 +19,14 @@ p {
 	padding: 0px;
 	font-family: Helvetica Neue;
 	line-height: 140%;
-	font-size: calc(var(--vh, 1vh) * 2);
+	font-size: 2vh;
 }
 
 h1 {
 	color: black;
 	font-family: "Junge", cursive;
   	font-style: normal;
-	font-size: calc(var(--vh, 1vh) * 13);
+	font-size: 13vh;
 	font-weight: normal;
 	letter-spacing: -2px;
 	text-align: center;
@@ -41,7 +41,7 @@ h1 {
 	z-index: 1;
 	left: auto;
 	right: auto;
-	top: calc(var(--vh, 1vh) * 30);
+	top: 30vh;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
@@ -54,7 +54,7 @@ h2 {
 	color: black;
 	font-family: "Junge";
 	font-weight: lighter;
-	font-size: calc(var(--vh, 1vh) * 5);
+	font-size: 5vh;
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 10px;
@@ -79,14 +79,14 @@ img {
 	display: block;
 	text-align: center;
 	color: black;
-	font-size: calc(var(--vh, 1vh) * 3);
+	font-size: 3vh;
 	background: none;
 	outline: 0;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0px;
 	margin-bottom: 60px;
-	border: solid calc(var(--vh, 1vh) * 0.4);
+	border: solid 0.4vh;
 	border-color: black;
 }
 
@@ -103,7 +103,7 @@ img {
 
 #baniere {
 	display: flex;
-	height: calc(var(--vh, 1vh) * 30);
+	height: 30vh;
 	overflow: hidden;
 	justify-content: center;
 	/*align-items: center;*/
@@ -125,7 +125,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: justify;
-	font-size: calc(var(--vh, 1vh) * 2);
+	font-size: 2vh;
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 0px;
@@ -152,7 +152,7 @@ img {
 	transition: 0s;
 	background: none;
 	position: relative;
-	top: calc(var(--vh, 1vh) * 30);
+	top: 30vh;
 }
 
 .fleche-navigation {
@@ -160,7 +160,7 @@ img {
   	margin-top: auto;
   	margin-bottom: auto;
   	cursor: pointer;
-  	font-size: calc(var(--vh, 1vh) * 20);
+  	font-size: 20vh;
   	transition: 0.4s;
   	outline: 0;
   	background: none;
@@ -179,25 +179,25 @@ img {
 
 
 
-/*.minia {
+.minia {
 	min-width: 16vh;
 	min-height: 9vh;
 	max-height: 45vh;
 	margin-bottom: 40px;
 	cursor: pointer;
-}*/
+}
 
-/*.YouTube {
+.YouTube {
 	height: 80vh;
-}*/
+}
 
 iframe[Attributes Style] {
 	height: 80vh;
 }
 
-/*#yt {
+#yt {
 	height: 80vh;
-}*/
+}
 
 
 #video1 {

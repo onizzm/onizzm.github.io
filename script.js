@@ -7,13 +7,7 @@ function sleep(ms) {
 
 //
 
-function setDynamicVh() {
-    const vh = window.innerHeight * 0.01; // Calcule 1% de la hauteur de la fenêtre
-    document.documentElement.style.setProperty('--vh', `${vh}px`); // Définit la variable CSS
-}
 
-window.addEventListener('resize', setDynamicVh); // Met à jour la variable lors du redimensionnement
-setDynamicVh(); // Définit la variable au chargement de la page
 
 
 
