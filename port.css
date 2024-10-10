@@ -19,7 +19,7 @@ p {
 	padding: 0px;
 	font-family: Helvetica Neue;
 	line-height: 140%;
-	font-size: calc(var(--haut) * 2);
+	font-size: calc(var(--haut) * 2.4);
 }
 
 h1 {
@@ -47,7 +47,7 @@ h1 {
 }
 
 #marge {
-	height: 31vh;
+	height: calc(var(--haut) * 26);
 }
 
 h2 {
