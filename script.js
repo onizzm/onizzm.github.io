@@ -5,6 +5,21 @@ function sleep(ms) {
 }
 
 
+//
+
+function setDynamicVh() {
+    const vh = window.innerHeight * 0.01; // Calcule 1% de la hauteur de la fenêtre
+    document.documentElement.style.setProperty('--vh', `${vh}px`); // Définit la variable CSS
+}
+
+window.addEventListener('resize', setDynamicVh); // Met à jour la variable lors du redimensionnement
+setDynamicVh(); // Définit la variable au chargement de la page
+
+
+
+// 
+
+
 async function animation() {
 
 		window.scrollTo({
@@ -79,21 +94,3 @@ function loader() {
 	const loader = document.getElementById("loader");
 	loader.style.display = 'none';
 }
-
-function setVh() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-window.addEventListener('resize', setVh);
-window.addEventListener('load', setVh);
-
-/**/
-function setVH() {
-    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
-}
-
-window.addEventListener('resize', setVH);
-setVH();
-
-/**/

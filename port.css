@@ -2,20 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
 
 
-/* */
-:root {
-    --vh: 100vh; /* Initialisation */
-}
-
-@media (orientation: portrait) {
-    body {
-        height: var(--vh);
-    }
-}
-
-/**/
-
-
 body {
 	margin: 0px;
 	transition: 1s;
@@ -33,14 +19,14 @@ p {
 	padding: 0px;
 	font-family: Helvetica Neue;
 	line-height: 140%;
-	font-size: 2vh;
+	font-size: calc(var(--vh, 1vh) * 2);
 }
 
 h1 {
 	color: black;
 	font-family: "Junge", cursive;
   	font-style: normal;
-	font-size: 13vh;
+	font-size: calc(var(--vh, 1vh) * 13);
 	font-weight: normal;
 	letter-spacing: -2px;
 	text-align: center;
@@ -55,7 +41,7 @@ h1 {
 	z-index: 1;
 	left: auto;
 	right: auto;
-	top: 30vh;
+	top: calc(var(--vh, 1vh) * 30);
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
@@ -68,7 +54,7 @@ h2 {
 	color: black;
 	font-family: "Junge";
 	font-weight: lighter;
-	font-size: 5vh;
+	font-size: calc(var(--vh, 1vh) * 5);
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 10px;
@@ -93,14 +79,14 @@ img {
 	display: block;
 	text-align: center;
 	color: black;
-	font-size: 3vh;
+	font-size: calc(var(--vh, 1vh) * 3);
 	background: none;
 	outline: 0;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0px;
 	margin-bottom: 60px;
-	border: solid 0.4vh;
+	border: solid calc(var(--vh, 1vh) * 0.4);
 	border-color: black;
 }
 
@@ -117,7 +103,7 @@ img {
 
 #baniere {
 	display: flex;
-	height: 30vh;
+	height: calc(var(--vh, 1vh) * 30);
 	overflow: hidden;
 	justify-content: center;
 	/*align-items: center;*/
@@ -139,7 +125,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: justify;
-	font-size: 2vh;
+	font-size: calc(var(--vh, 1vh) * 2);
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 0px;
@@ -166,7 +152,7 @@ img {
 	transition: 0s;
 	background: none;
 	position: relative;
-	top: 30vh;
+	top: calc(var(--vh, 1vh) * 30);
 }
 
 .fleche-navigation {
@@ -174,7 +160,7 @@ img {
   	margin-top: auto;
   	margin-bottom: auto;
   	cursor: pointer;
-  	font-size: 20vh;
+  	font-size: calc(var(--vh, 1vh) * 20);
   	transition: 0.4s;
   	outline: 0;
   	background: none;
@@ -193,25 +179,25 @@ img {
 
 
 
-.minia {
+/*.minia {
 	min-width: 16vh;
 	min-height: 9vh;
 	max-height: 45vh;
 	margin-bottom: 40px;
 	cursor: pointer;
-}
+}*/
 
-.YouTube {
+/*.YouTube {
 	height: 80vh;
-}
+}*/
 
 iframe[Attributes Style] {
 	height: 80vh;
 }
 
-#yt {
+/*#yt {
 	height: 80vh;
-}
+}*/
 
 
 #video1 {
