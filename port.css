@@ -52,7 +52,13 @@ h1 {
 	height: calc(var(--haut) * 24);
 }
 
+.contain {
+	height: 100%;
+	object-fit: contain;
+}
+
 h2 {
+
 	color: black;
 	font-family: "Junge";
 	font-weight: lighter;
@@ -109,21 +115,26 @@ img {
 	border-color: green;
 }
 
-#bouton_port button:click {
-	
-}
-
-
 .titrebio {
 	display: flex;
+	margin-bottom: 10px;
+	padding: 0px;
+	align-items: center;
 	/*font-size: 3rem;*/
-	font-weight: bold;
+	/*font-weight: bold;
 	text-align: left;
 	padding: 0px;
 	margin-left: 20px;
-	margin-bottom: 0px;
+	margin-bottom: 0px;*/
 }
 
+.lieninsta {
+	cursor: pointer;
+	margin-left: auto;
+	height: calc(var(--haut) * 5);
+	color: black;
+	text-decoration: none;
+}
 
 #bio {
 	display: flex;
