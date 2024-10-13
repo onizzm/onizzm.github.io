@@ -48,19 +48,8 @@ h1 {
 	/*transition: 1s;*/
 }
 
-#titre {
-	transition: 0s;
-	position: absolute;
-	z-index: 1;
-	left: auto;
-	right: auto;
-	top: calc(var(--haut) * 30);
-	left: 50%;
-	transform: translate(-50%, 0%);
-}
-
 #marge {
-	height: calc(var(--haut) * 26);
+	height: calc(var(--haut) * 24);
 }
 
 h2 {
@@ -74,15 +63,26 @@ h2 {
 }
 
 img {
-	height: 150%;
+	height: 200%;
 }
 
+#baniere {
+	display: flex;
+	height: calc(var(--haut) * 25);
+	overflow: hidden;
+	justify-content: center;
+	transition: 0s;
+}
 
-.tracer {
-	border-color: black;
-	border: 5px;
-	border-style: solid;
-
+#titre {
+	transition: 0s;
+	position: absolute;
+	z-index: 1;
+	left: auto;
+	right: auto;
+	top: calc(var(--haut) * 24);
+	left: 50%;
+	transform: translate(-50%, 0%);
 }
 
 #bouton_port button {
@@ -113,15 +113,6 @@ img {
 	
 }
 
-
-#baniere {
-	display: flex;
-	height: calc(var(--haut) * 30);
-	overflow: hidden;
-	justify-content: center;
-	/*align-items: center;*/
-	transition: 0s;
-}
 
 .titrebio {
 	display: flex;
@@ -165,7 +156,7 @@ img {
 	transition: 0s;
 	background: none;
 	position: relative;
-	top: calc(var(--haut) * 30);
+	top: calc(var(--haut) * 24);
 }
 
 .fleche-navigation {
@@ -184,42 +175,11 @@ img {
 	color: green;
 }
 
-@media (max-width: 1200px) {
-    .fleche-navigation {
-        display: none; /* ou visibility: hidden; */
-    }
-}
-
-
-
 .minia {
 	min-width: 16vh;
 	min-height: 9vh;
 	max-height: 45vh;
 	margin-bottom: 40px;
 	cursor: pointer;
-}
-
-.YouTube {
-	height: 80vh;
-}
-
-iframe[Attributes Style] {
-	height: 80vh;
-}
-
-#yt {
-	height: 80vh;
-}
-
-
-#video1 {
-	display: block;
-	position: absolute;
-}
-
-#video2 {
-	position: absolute;
-	left: 100vw;
 }
 

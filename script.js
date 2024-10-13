@@ -9,15 +9,6 @@ function hauteur() {
     document.documentElement.style.setProperty('--haut', `${haut}px`);
 }
 
-//
-
-
-
-
-
-// 
-
-
 async function animation() {
 
 		window.scrollTo({
@@ -59,7 +50,7 @@ async function animation() {
 
 		} else {
 			video.style.opacity = 0;
-			titre.style.top = "calc(var(--haut) * 30)";
+			titre.style.top = "calc(var(--haut) * 24)";
 			await sleep(500);
 			video.style.display = "none";
 			marge.style.display = "block";
