@@ -53,6 +53,7 @@ async function animation() {
 
 
 		if (bio.style.opacity == 1){
+			document.body.classList.add('no-scroll');
 			bio.style.opacity = 0;
 			baniere.style.opacity = 0;
 			titre.style.top = "calc(var(--haut) * 0)";
@@ -74,6 +75,7 @@ async function animation() {
 			video.style.opacity = 0;
 			titre.style.top = "calc(var(--haut) * 24)";
 			
+			document.body.classList.remove('no-scroll');
 			await sleep(500);
 			video.style.display = "none";
 			marge.style.display = "block";

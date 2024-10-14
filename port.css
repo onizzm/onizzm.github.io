@@ -10,6 +10,10 @@ body {
     background-repeat: no-repeat;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 body::-webkit-scrollbar {
     display: none; /* Masque la barre de défilement */
 }
