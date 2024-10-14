@@ -11,8 +11,23 @@ function hauteur() {
 
 function device() {
 	    if (window.innerHeight < window.innerWidth) {
-    	document.getElementById("description").style.display = "none";
-    }
+	    	const elements = document.querySelectorAll('.description');
+
+			elements.forEach((element) => {
+    // Exemple : change la couleur de fond de chaque élément
+    		element.style.display = 'none';
+			});
+		}
+
+		if (window.innerHeight > window.innerWidth) {
+			const arrow = document.querySelectorAll('.arrow');
+
+			arrow.forEach((element) => {
+				element.style.display = 'none';
+			});
+		}
+
+
 }
 
 async function animation() {
@@ -77,11 +92,6 @@ async function animation() {
 
 }
 
-function next_video() {
-	var video1 = document.getElementById("video1");
-	var video2 = document.getElementById("video2");
-}
-
 
 function loader() {
 	console.log('fonction loader'); 
@@ -109,76 +119,6 @@ function prevSlide() {
     currentIndex--;
     showSlide(currentIndex);
 }
-
-/*
-
-let currentIndex = 0;
-let startX = 0;
-let isDragging = false;
-
-function moveSlide(direction) {
-    const items = document.querySelectorAll('.carrousel-item');
-    const totalItems = items.length;
-
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = totalItems - 1;
-    } else if (currentIndex >= totalItems) {
-        currentIndex = 0;
-    }
-
-    const offset = -currentIndex * 100;
-    document.querySelector('.carrousel-container').style.transform = `translateX(${offset}%)`;
-}
-
-// Événements tactiles sur le carrousel
-const carrousel = document.querySelector('.carrousel');
-
-carrousel.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-    isDragging = true;
-});
-
-carrousel.addEventListener('touchmove', (e) => {
-    if (!isDragging) return;
-    const moveX = e.touches[0].clientX - startX;
-
-    if (moveX > 50) {
-        moveSlide(-1); // Glissement vers la droite
-        isDragging = false; // Empêche le glissement multiple
-    } else if (moveX < -50) {
-        moveSlide(1); // Glissement vers la gauche
-        isDragging = false; // Empêche le glissement multiple
-    }
-});
-
-carrousel.addEventListener('touchend', () => {
-    isDragging = false;
-});
-
-// Pour s'assurer que les événements tactiles sont capturés
-const iframes = document.querySelectorAll('iframe');
-
-iframes.forEach(iframe => {
-    iframe.addEventListener('touchstart', (e) => {
-        e.stopPropagation(); // Empêche la propagation pour éviter le comportement par défaut
-    });
-});
-
-*/
-
-/*
-
-window.addEventListener('wheel', (event) => {
-    if (event.deltaY > 0) {
-        nextSlide();
-    } else {
-        prevSlide();
-    }
-});
-
-*/
 
 let startX;
 

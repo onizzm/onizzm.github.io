@@ -181,7 +181,7 @@ img {
 
 #video {
 	width: 100%;
-	z-index: 2;
+	/*z-index: 2;*/
 	flex-wrap: wrap;
 	justify-content: space-around;
 	transition: 0s;
@@ -192,6 +192,19 @@ img {
     overflow: hidden;
 }
 
+.arrow {
+	font-size: calc(var(--haut) * 15);
+	z-index: 2;
+	background: none;
+	cursor: pointer;
+	border: none;
+}
+
+.arrow:hover {
+	color: green;
+	transition: 0.4s;
+}
+
 .carrousel-wrapper {
     display: flex;
     transition: transform 0.5s ease;
@@ -200,7 +213,6 @@ img {
 
 .carrousel-item {
     min-width: 100%;
-    z-index: 1;
 }
 
 
@@ -212,7 +224,7 @@ img {
 	margin: auto;
 }
 
-#description {
+.description {
 
 }
 
