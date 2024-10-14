@@ -3,11 +3,12 @@
 
 
 body {
-	margin: 0px;
-	transition: 1s;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    transition: 1s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar {
@@ -155,7 +156,7 @@ img {
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: calc(var(--haut) *3);
 	transition: 0.4s;
 	background: none;
 }
@@ -244,6 +245,7 @@ img {
 }
 
 .instabas {
+	z-index: 2;
 	outline: 0;
 	cursor: pointer;
 	margin-left: auto;
@@ -255,4 +257,15 @@ img {
 	right: 20px;
 }
 
+
+#footer {
+	width: 100vw;
+	bottom: 0%;
+	padding-bottom: calc(var(--haut) * 1);
+	font-family: Helvetica Neue;
+	font-size: calc(var(--haut) * 2);
+	text-align: center;
+	margin: auto;
+	/*background-color: white;*/
+}
 

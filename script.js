@@ -28,6 +28,7 @@ function device() {
 		}
 
 
+
 }
 
 async function animation() {
@@ -40,10 +41,10 @@ async function animation() {
 
 		var bio = document.getElementById("bio");
 		var baniere = document.getElementById("baniere");
-		/*var body = document.getElementByName("body")*/
 		var video = document.getElementById("video");
 		var titre = document.getElementById("titre");
 		var marge = document.getElementById("marge");
+		var footer = document.getElementById('footer');
 
 		//mettre les transitions//
 		baniere.style.transition = '0.4s';
@@ -55,13 +56,12 @@ async function animation() {
 			bio.style.opacity = 0;
 			baniere.style.opacity = 0;
 			titre.style.top = "calc(var(--haut) * 0)";
+			footer.style.display = 'none';
 			await sleep(1000);
 			bio.style.display = "none";
 			marge.style.display = "none";
 			baniere.style.display = "none";
 			/*baniere.style.display = "none";*/
-
-			/*document.body.style.backgroundImage = "url('image/background_port.png')";*/
 			video.style.display = "flex";
 			await sleep(400);
 			video.style.opacity = 1;
@@ -69,9 +69,11 @@ async function animation() {
 			document.getElementById("titre_bouton").innerHTML = "AFFICHER BIO";
 
 
+
 		} else {
 			video.style.opacity = 0;
 			titre.style.top = "calc(var(--haut) * 24)";
+			
 			await sleep(500);
 			video.style.display = "none";
 			marge.style.display = "block";
@@ -82,8 +84,11 @@ async function animation() {
 			baniere.style.opacity = 1;
 			bio.style.opacity = 1;
 			await sleep(400);
-			document.body.style.backgroundImage = "none";
 			document.getElementById("titre_bouton").innerHTML = "DECOUVRIR LE PORTFOLIO";
+
+			footer.style.display = 'block';
+
+			
 		}	
 
 		baniere.style.transition = '0s';
