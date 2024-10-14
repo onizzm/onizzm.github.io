@@ -136,6 +136,17 @@ img {
 	text-decoration: none;
 }
 
+/*.lieninsta {
+	cursor: pointer;
+	font-size: calc(var(--haut) * 4);
+	text-decoration: none;
+	color: black;
+	margin-left: auto;
+	font-family: 'Junge';
+}*/
+
+
+
 #bio {
 	display: flex;
 	flex-wrap: wrap;
@@ -158,39 +169,72 @@ img {
 
 }
 
+.vide {
+
+}
+
 
 #video {
-	display: flex;
+	width: 100%;
 	z-index: 2;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	transition: 0s;
 	background: none;
 	position: relative;
 	top: calc(var(--haut) * 24);
+    margin: auto;
+    overflow: hidden;
 }
 
-.fleche-navigation {
-	font-family: 'Material Symbols Outlined';
-  	margin-top: auto;
-  	margin-bottom: auto;
-  	cursor: pointer;
-  	font-size: calc(var(--haut) * 20);
-  	transition: 0.4s;
-  	outline: 0;
-  	background: none;
-  	border: none;
+.carrousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
 }
 
-.fleche-navigation:hover {
-	color: green;
+.carrousel-item {
+    min-width: 100%;
+    z-index: 1;
 }
 
-.minia {
-	min-width: 16vh;
-	min-height: 9vh;
-	max-height: 45vh;
-	margin-bottom: 40px;
+
+.YT {
+	display: flex;
+	margin: auto;
+	height: 535px;
+	width: 935px;
+	margin: auto;
+}
+
+#description {
+
+}
+
+.legende {
+	font-family: 'Junge';
+	font-size: calc(var(--haut) * 1);
+	line-height: 100%;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: justify;
+}
+
+.bouton {
+	background: none;
+	z-index: 3;
+	height: calc(var(--haut) * 6);
+}
+
+.instabas {
 	cursor: pointer;
+	margin-left: auto;
+	height: calc(var(--haut) * 7);
+	color: black;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 }
+
 

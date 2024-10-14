@@ -9,6 +9,12 @@ function hauteur() {
     document.documentElement.style.setProperty('--haut', `${haut}px`);
 }
 
+function device() {
+	    if (window.innerHeight < window.innerWidth) {
+    	document.getElementById("description").style.display = "none";
+    }
+}
+
 async function animation() {
 
 		window.scrollTo({
@@ -83,3 +89,108 @@ function loader() {
 	const loader = document.getElementById("loader");
 	loader.style.display = 'none';
 }
+
+let currentIndex = 0;
+
+function showSlide(index) {
+    const items = document.querySelectorAll('.carrousel-item');
+    if (index >= items.length) currentIndex = 0;
+    if (index < 0) currentIndex = items.length - 1;
+    const offset = -currentIndex * 100; // chaque item fait 100% de largeur
+    document.querySelector('.carrousel-wrapper').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    currentIndex++;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex--;
+    showSlide(currentIndex);
+}
+
+/*
+
+let currentIndex = 0;
+let startX = 0;
+let isDragging = false;
+
+function moveSlide(direction) {
+    const items = document.querySelectorAll('.carrousel-item');
+    const totalItems = items.length;
+
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = totalItems - 1;
+    } else if (currentIndex >= totalItems) {
+        currentIndex = 0;
+    }
+
+    const offset = -currentIndex * 100;
+    document.querySelector('.carrousel-container').style.transform = `translateX(${offset}%)`;
+}
+
+// Événements tactiles sur le carrousel
+const carrousel = document.querySelector('.carrousel');
+
+carrousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+});
+
+carrousel.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const moveX = e.touches[0].clientX - startX;
+
+    if (moveX > 50) {
+        moveSlide(-1); // Glissement vers la droite
+        isDragging = false; // Empêche le glissement multiple
+    } else if (moveX < -50) {
+        moveSlide(1); // Glissement vers la gauche
+        isDragging = false; // Empêche le glissement multiple
+    }
+});
+
+carrousel.addEventListener('touchend', () => {
+    isDragging = false;
+});
+
+// Pour s'assurer que les événements tactiles sont capturés
+const iframes = document.querySelectorAll('iframe');
+
+iframes.forEach(iframe => {
+    iframe.addEventListener('touchstart', (e) => {
+        e.stopPropagation(); // Empêche la propagation pour éviter le comportement par défaut
+    });
+});
+
+*/
+
+/*
+
+window.addEventListener('wheel', (event) => {
+    if (event.deltaY > 0) {
+        nextSlide();
+    } else {
+        prevSlide();
+    }
+});
+
+*/
+
+let startX;
+
+window.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX;
+});
+
+window.addEventListener('touchend', (event) => {
+    const endX = event.changedTouches[0].clientX;
+    if (startX > endX + 50) {
+        nextSlide(); // glissement vers la gauche
+    } else if (startX < endX - 50) {
+        prevSlide(); // glissement vers la droite
+    }
+});

@@ -17,9 +17,6 @@
   <body name="body">
     <script> hauteur()</script>
 
-    <span id="loader" style="font-family: 'Material Symbols Outlined'; position: absolute; opacity: 0;">arrow_back_2</span>
-    <span id="loader" style="font-family: 'Material Symbols Outlined'; position: absolute; opacity: 0;">play_arrow</span>
-
 
   	<div id="baniere" style="opacity: 1;">
   		<img src="image/baniere_portfolio.png" style> 
@@ -37,19 +34,63 @@
 
 	</div> 
 
-  <div rel="preload" id="video" style="opacity: 0; display: none;">
-      <!--button onclick="prev_video()" rel="preload" class="fleche-navigation">arrow_back_2</button-->
 
-      <iframe width="950" height="535" src="https://www.youtube-nocookie.com/embed/videoseries?si=PUiXzZ7uswXqac5d&amp;list=PLEAQXFUYQahD-w8cD64LbPLLpGd6KFzeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div id="video" style="opacity: 0; display: none;">
+      <div class="carrousel-wrapper">
+        <div class="carrousel-item" id="video1">
+          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/ChnqeU4Wot8?si=Gf1lXb3hUVAO6OK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div id="description">
+            <h2> Underwater </h2>
+            <p class="legende">Enfant, Vincent s'est noyé et a failli perdre la vie. Depuis lors, il a embrassé ses expériences passées et les a canalisées dans son art comme un moyen de s'épanoui, transformant l'impact de son accident en source d'inspiration. Courage et sensibilité poétique nourrissent son travail. A travers son histoire, j'interprète ma propre poésie pour présenter son travail et sa vision de la photographie. <br> <br>
+            Musique : Onizzm</p>
+          </div>
+        </div>
 
-      <!--button onclick="next_video()" rel="preload" class="fleche-navigation">play_arrow</button-->
+        <div class="carrousel-item" id="video2">
+          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/nd2F2Zr-O00?si=fNtZuZaN4xZgkwuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="description">
+            <h2> Edward Theme  </h2>
+            <p class="legende">Après avoir revu "Edouard aux mains d'argents" j'ai été fasciné par la musique, j'ai donc tout simplement voulu réinterpréter ce thème magnifique.<br> <br>
+            Musique : Onizzm</p>
+          </div>
+        </div>
+
+        <div class="carrousel-item" id="video3">
+          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/btJl2A6giCs?si=4QjSCV57-1AvtkPS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="description">
+            <h2> Black Spiderman  </h2>
+            <p class="legende">Rien à dire je voulais juste absolument faire un thème de super-héros bien évidemment très inspiré par Danny Elfman<br> <br>
+            Musique : Onizzm</p>
+          </div>
+        </div>
+
+        <div class="carrousel-item" id="video4">
+          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/FfoB-yVmAKE?si=K36gLw0h1VwbrE5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="description">
+            <h2> Odyssée des ilussions - Ending  </h2>
+            <p class="legende"><br> <br>
+            Musique : Onizzm</p>
+          </div>
+        </div>
+
+        <div class="carrousel-item" id="video5">
+          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/HRf_fw3-Tsk?si=wdyga00GHEsKhXbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="description">
+            <h2> Alouan - Pièce Violette </h2>
+            <p class="legende">Une enfant, Sawda, se retrouve confrontée aux inquiétudes, insécurités, questionnements et émotions menées par l’arrivée de l’adolescence. Subissant ces changements, elle tente de s’accrocher à son imagination et sa vision enfantine du monde afin de préserver son innocence. Ce court métrage présente, de manière métaphorique, les différentes étapes de son évolution à travers plusieurs pièces. Ici la pièce violette présente la nostalgie de l'insouciance de son enfance.<br> <br>
+            Musique : Onizzm</p>
+          </div>
+        </div>
+      </div>
+
+      
+      </div>
     </div>
 
+     <div class="instabas" style="margin-right: 20px; margin-top: auto;"> <a class="contain" href="https://www.instagram.com/onizzm/" target="_blank"> <img src="image/iconinsta.png" class="contain" > </a> </div>
 
     <div id="bio" style="opacity: 1;">
   		
-  	
-
 		<div class="jracontemavie">
 			<div class="titrebio">
 				<h2> Éxperience </h2>
@@ -64,9 +105,9 @@
 
     <div class="jracontemavie">
     	<div class="titrebio">
-        	<h2> Onizzm </h2> 
-        		<div class="lieninsta"> <a class="contain" href="https://www.instagram.com/onizzm/"> <img src="image/iconinsta.png" class="contain" > </a> </div>
-        </div>
+        	<h2> Louis </h2> 
+        		<!--div class="lieninsta"> <a class="contain" href="https://www.instagram.com/onizzm/" target="_blank"> <img src="image/iconinsta.png" class="contain" > </a> </div-->
+      </div>
         <p>  Je m'appelle Louis, j'ai 24 ans et j'ai commencé la musique à 8 ans quand j'ai retrouvé par hasard le premier clavier de ma mère sous un lit. Aujourd'hui j'ai envie de mettre à disposition ma passion et mon enthousiasme pour échanger, créer et réaliser ensemble de beaux projets.
       </p>
     </div>
@@ -81,7 +122,7 @@
 
 
     </div>
-
+    <script> device() </script>
 
   </body>
 </html>
