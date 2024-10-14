@@ -170,6 +170,11 @@ img {
 }
 
 .vide {
+	top: calc(var(--haut) * 0);
+	height: 535px;
+	width: 100%;
+	z-index: 4;
+	position: absolute;
 
 }
 
@@ -213,8 +218,8 @@ img {
 
 .legende {
 	font-family: 'Junge';
-	font-size: calc(var(--haut) * 1);
-	line-height: 100%;
+	font-size: calc(var(--haut) * 2);
+	line-height: 110%;
 	margin-right: 20px;
 	margin-left: 20px;
 	text-align: justify;
@@ -227,6 +232,7 @@ img {
 }
 
 .instabas {
+	outline: 0;
 	cursor: pointer;
 	margin-left: auto;
 	height: calc(var(--haut) * 7);
