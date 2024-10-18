@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    max-height: 100vh;
     transition: 1s;
     background-size: cover;
     background-position: center;
@@ -226,16 +227,35 @@ img {
 }
 
 
+.nav_carrousel {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	font-size: calc(var(--haut)*2);
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
 .YT {
 	display: flex;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
 	height: 535px;
 	width: 935px;
-	margin: auto;
 }
 
 .description {
-	margin: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .legende {
