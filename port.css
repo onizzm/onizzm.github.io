@@ -199,7 +199,8 @@ img {
 	background: none;
 	position: relative;
 	top: calc(var(--haut) * 0);
-    margin: auto;
+    /*margin: auto;*/
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
