@@ -57,7 +57,7 @@ async function animation() {
 			bio.style.opacity = 0;
 			baniere.style.opacity = 0;
 			titre.style.top = "calc(var(--haut) * 0)";
-			//footer.style.display = 'none';
+			footer.style.position = 'absolute';
 			await sleep(1000);
 			bio.style.display = "none";
 			//marge.style.display = "none";
@@ -77,6 +77,7 @@ async function animation() {
 			
 			document.body.classList.remove('no-scroll');
 			await sleep(500);
+			footer.style.position = 'relative';
 			video.style.display = "none";
 			//marge.style.display = "block";
 			bio.style.display = "flex";
@@ -88,7 +89,6 @@ async function animation() {
 			await sleep(400);
 			document.getElementById("titre_bouton").innerHTML = "DECOUVRIR LE PORTFOLIO";
 
-			//footer.style.display = 'block';
 
 			
 		}	
