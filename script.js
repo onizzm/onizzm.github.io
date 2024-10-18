@@ -57,10 +57,10 @@ async function animation() {
 			bio.style.opacity = 0;
 			baniere.style.opacity = 0;
 			titre.style.top = "calc(var(--haut) * 0)";
-			footer.style.display = 'none';
+			//footer.style.display = 'none';
 			await sleep(1000);
 			bio.style.display = "none";
-			marge.style.display = "none";
+			//marge.style.display = "none";
 			baniere.style.display = "none";
 			/*baniere.style.display = "none";*/
 			video.style.display = "flex";
@@ -78,7 +78,7 @@ async function animation() {
 			document.body.classList.remove('no-scroll');
 			await sleep(500);
 			video.style.display = "none";
-			marge.style.display = "block";
+			//marge.style.display = "block";
 			bio.style.display = "flex";
 			baniere.style.display = "flex";
 			/*baniere.style.display = "flex";*/
@@ -88,7 +88,7 @@ async function animation() {
 			await sleep(400);
 			document.getElementById("titre_bouton").innerHTML = "DECOUVRIR LE PORTFOLIO";
 
-			footer.style.display = 'block';
+			//footer.style.display = 'block';
 
 			
 		}	

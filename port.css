@@ -173,6 +173,12 @@ img {
 
 }
 
+@media (max-width: 1000px) {
+    #item2 {
+        order: -1; /* Item 2 devient le premier */
+    }
+}
+
 .vide {
 	top: calc(var(--haut) * 0);
 	height: 535px;
@@ -191,7 +197,7 @@ img {
 	transition: 0s;
 	background: none;
 	position: relative;
-	top: calc(var(--haut) * 24);
+	top: calc(var(--haut) * 0);
     margin: auto;
     overflow: hidden;
 }
@@ -229,7 +235,7 @@ img {
 }
 
 .description {
-
+	margin: 20px;
 }
 
 .legende {
