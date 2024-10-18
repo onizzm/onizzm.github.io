@@ -129,7 +129,26 @@
     <div id="footer">© Site développé par Onizzm</div>
 
 
-    <script> device() </script>
+    <script> device();</script>
+
+    <script>
+    	const pute = document.getElementById("video");
+		let startX;
+
+		pute.addEventListener('touchstart', (event) => {
+		    startX = event.touches[0].clientX;
+		});
+
+		pute.addEventListener('touchend', (event) => {
+		    const endX = event.changedTouches[0].clientX;
+		    if (startX > endX + 50) {
+		        nextSlide(); // glissement vers la gauche
+		    } else if (startX < endX - 50) {
+		        prevSlide(); // glissement vers la droite
+		    }
+		});
+    </script>
+
 
 
   </body>

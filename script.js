@@ -127,17 +127,4 @@ function prevSlide() {
     showSlide(currentIndex);
 }
 
-let startX;
 
-window.addEventListener('touchstart', (event) => {
-    startX = event.touches[0].clientX;
-});
-
-window.addEventListener('touchend', (event) => {
-    const endX = event.changedTouches[0].clientX;
-    if (startX > endX + 50) {
-        nextSlide(); // glissement vers la gauche
-    } else if (startX < endX - 50) {
-        prevSlide(); // glissement vers la droite
-    }
-});

@@ -180,15 +180,6 @@ img {
     }
 }
 
-.vide {
-	top: calc(var(--haut) * 0);
-	height: 535px;
-	width: 100%;
-	z-index: 4;
-	position: absolute;
-
-}
-
 
 #video {
 	width: 100%;
