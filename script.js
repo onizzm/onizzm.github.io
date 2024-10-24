@@ -121,6 +121,8 @@ function showSlide(index) {
     if (index < 0) currentIndex = items.length - 1;
     const offset = -currentIndex * 100; // chaque item fait 100% de largeur
     document.querySelector('.carrousel-wrapper').style.transform = `translateX(${offset}%)`;
+
+
 }
 
 function nextSlide() {

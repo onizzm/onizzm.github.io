@@ -74,7 +74,7 @@ h2 {
 }
 
 img {
-	height: 130%;
+	height: 120%;
 }
 
 #baniere {
@@ -82,7 +82,7 @@ img {
 	height: calc(var(--haut) * 25);
 	overflow: hidden;
 	justify-content: center;
-	align-items: end;
+	align-items: baseline;
 	transition: 0s;
 }
 
@@ -222,8 +222,9 @@ img {
 
 .nav_carrousel {
 	width: 100vw;
+	position: relative;
+	bottom: 0%;
 	display: flex;
-	bottom: 0.1%;
 	justify-content: center;
 	font-size: calc(var(--haut)*2);
 }
