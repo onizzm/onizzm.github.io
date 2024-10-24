@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="port.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 
     <link rel="icon" type="image/png" href="image/icone_port.png" />
     <title>Onizzm</title>
@@ -41,6 +42,7 @@
       <!--div class="vide"> </div-->
       <div class="carrousel-wrapper">
         <div class="carrousel-item" id="video1">
+        	<!--div class="YT" id="yt1"></div-->
           <iframe class="YT" src="https://www.youtube-nocookie.com/embed/ChnqeU4Wot8?si=Gf1lXb3hUVAO6OK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="nav_carrousel"><span>&#9679; </span><span>&#9675; </span><span>&#9675; </span><span>&#9675; </span><span>&#9675; </span></div>
           <div class="description">
@@ -103,7 +105,7 @@
 			</div>
 			<ul>
 				<li> 16 années de pratique de piano dont 8 années de cours. 10 ans de guitare en autodidacte et quelque base de violon. </li>
-				<li> Diplômé depuis 2024 à la SAE institute à Genève en tant qu’ingénieure du son. </li>
+				<li> Diplômé depuis 2024 à la SAE institute à Genève en tant qu’ingénieur du son. </li>
 				<li> Et surtout pratique de la MAO, mixage et sound-design, en autodidacte tout les jours depuis 12 ans. </li>
 			</ul>
 		</div>
@@ -121,7 +123,7 @@
 			<div class="titrebio">
 				<h2> Ambitions </h2>
 			</div>
-			<p> Je rêve d’avoir la chance de composer pour un long métrage avec une musique basé sur l'émotion comme celle qui m'a touché dans les films de Burton. Mais je suis également attiré par un univers plus intimiste comme les mini séries faites « maison » comme "bref" ou "straperra longo i bordi". En bref rencontré un maximum de personnes avec qui créer de belles oeuvres.
+			<p> Je rêve d’avoir la chance de composer pour un long métrage avec une musique basé sur l'émotion comme celle qui m'a touché dans les films de Burton. Mais je suis également attiré par un univers plus intimiste comme les mini séries faites « maison » comme "bref" ou "straperra longo i bordi". En bref rencontrer un maximum de personnes avec qui créer de belles oeuvres.
 			</p>
 		</div>
     </div>
@@ -131,15 +133,51 @@
 
     <script> device();</script>
 
+
     <script>
-    	const pute = document.getElementById("video");
+
+
+    	const video = document.getElementById("video");
+		let startX;
+		let isMoving = false;
+
+		video.addEventListener('touchstart', (event) => {
+		    startX = event.touches[0].clientX; // Position initiale
+		    isMoving = true; // Indique que le mouvement a commencé
+		});
+
+		video.addEventListener('touchmove', (event) => {
+		    if (!isMoving) return; // Ne rien faire si pas en mouvement
+
+		    const currentX = event.touches[0].clientX; // Position actuelle
+		    const diffX = startX - currentX; // Calculer la différence
+
+		    // Vous pouvez ajouter une logique pour déterminer si le geste doit être considéré
+		    // par exemple, si diffX dépasse un certain seuil
+		    if (Math.abs(diffX) > 50) {
+		        if (diffX > 0) {
+		            nextSlide(); // Glissement vers la gauche
+		        } else {
+		            prevSlide(); // Glissement vers la droite
+		        }
+		        isMoving = false; // Réinitialiser le flag pour éviter les appels répétés
+		    }
+		});
+
+		video.addEventListener('touchend', () => {
+		    isMoving = false; // Réinitialiser le flag lorsque le toucher se termine
+		});
+
+    	/*
+
+    	const video = document.getElementById("video");
 		let startX;
 
-		pute.addEventListener('touchstart', (event) => {
+		video.addEventListener('touchstart', (event) => {
 		    startX = event.touches[0].clientX;
 		});
 
-		pute.addEventListener('touchend', (event) => {
+		video.addEventListener('touchend', (event) => {
 		    const endX = event.changedTouches[0].clientX;
 		    if (startX > endX + 50) {
 		        nextSlide(); // glissement vers la gauche
@@ -147,6 +185,10 @@
 		        prevSlide(); // glissement vers la droite
 		    }
 		});
+
+
+		*/
+		
     </script>
 
 

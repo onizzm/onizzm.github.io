@@ -222,6 +222,7 @@ img {
 .nav_carrousel {
 	width: 100vw;
 	display: flex;
+	bottom: 1%;
 	justify-content: center;
 	font-size: calc(var(--haut)*2);
 }
@@ -241,8 +242,8 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
-	height: 535px;
-	width: 935px;
+	height: 526px;
+	width: 936px;
 }
 
 .description {
@@ -287,6 +288,7 @@ img {
 	font-size: calc(var(--haut) * 2);
 	text-align: center;
 	margin: auto;
+	transition: 1s;
 	
 	/*background-color: white;*/
 }

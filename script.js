@@ -10,20 +10,26 @@ function hauteur() {
 }
 
 function device() {
-	    if (window.innerHeight < window.innerWidth) {
-	    	const elements = document.querySelectorAll('.description');
+	    if (window.innerHeight < window.innerWidth) { //version Ordi
+	    	const description = document.querySelectorAll('.description');
 
-			elements.forEach((element) => {
+			description.forEach((element) => { 
     // Exemple : change la couleur de fond de chaque élément
     		element.style.display = 'none';
 			});
 		}
 
-		if (window.innerHeight > window.innerWidth) {
+		if (window.innerHeight > window.innerWidth) { //version telephone
 			const arrow = document.querySelectorAll('.arrow');
 
 			arrow.forEach((element) => {
 				element.style.display = 'none';
+			});
+
+			const nav = document.querySelectorAll('.nav_carrousel');
+
+			nav.forEach((element) => {
+				element.style.position = 'absolute';
 			});
 		}
 
