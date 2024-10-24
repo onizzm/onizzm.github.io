@@ -222,7 +222,7 @@ img {
 .nav_carrousel {
 	width: 100vw;
 	display: flex;
-	bottom: 1%;
+	bottom: 0.5%;
 	justify-content: center;
 	font-size: calc(var(--haut)*2);
 }
