@@ -184,16 +184,15 @@ img {
 
 #video {
 	width: 100%;
-	/*z-index: 2;*/
 	flex-wrap: wrap;
 	justify-content: space-around;
 	transition: 0s;
 	background: none;
 	position: relative;
 	top: calc(var(--haut) * 0);
-    /*margin: auto;*/
     margin-bottom: 20px;
     overflow: hidden;
+    height: calc(var(--haut) * 72);
 }
 
 .arrow {
