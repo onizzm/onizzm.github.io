@@ -177,7 +177,15 @@ img {
 
 @media (max-width: 1000px) {
     #item2 {
-        order: -1; /* Item 2 devient le premier */
+        order: 0; /* Item 2 devient le premier */
+    }
+
+    #item3 {
+    	order: 1;
+    }
+
+    #item1 {
+    	order: 2;
     }
 }
 
