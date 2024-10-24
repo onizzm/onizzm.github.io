@@ -74,7 +74,7 @@ h2 {
 }
 
 img {
-	height: 120%;
+	height: 200%;
 }
 
 #baniere {
@@ -82,7 +82,7 @@ img {
 	height: calc(var(--haut) * 25);
 	overflow: hidden;
 	justify-content: center;
-	align-items: baseline;
+	align-items: center;
 	transition: 0s;
 }
 
