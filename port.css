@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 #content {
     display: none;
     opacity: 0;
-    transition: 0.4s;
+    transition: 1s;
 }
 
 p {
