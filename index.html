@@ -17,122 +17,134 @@
   <body name="body">
     <script> hauteur()</script>
 
-
-  	<div id="baniere" style="opacity: 1;">
-  		<img src="image/baniere_portfolio.png" style> 
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+        <div class="titre1">Site développé par Onizzm</div>
     </div>
 
-    <div id="marge"> </div>
+    <div id="content">
+	  	<div id="baniere" style="opacity: 1;">
+	  		<img src="image/baniere_portfolio.png" style> 
+	    </div>
 
-    <div id="titre">
+	    <div id="marge"> </div>
 
-    	<h1> onizzm </h1>
-    
-		<div id="bouton_port"> 
-    		<button onclick="animation()" > <span id="titre_bouton"> DÉCOUVRIR LE PORTFOLIO </span> </button>
-    </div>
+	    <div id="titre">
 
-	   </div> 
+	    	<h1> onizzm </h1>
+	    
+			<div id="bouton_port"> 
+	    		<button onclick="animation()" > <span id="titre_bouton"> DÉCOUVRIR LE PORTFOLIO </span> </button>
+	    </div>
 
-    <div id="video" style="opacity: 0; display: none;">
+		   </div> 
 
-        <button class="arrow" onclick="prevSlide()" style="position: absolute; top: calc(var(--haut) * 23); left: 2vw;" >&#10094;</button>
-        <button class="arrow" onclick="nextSlide()" style="position: absolute; top: calc(var(--haut) * 23); right: 2vw;">&#10095;</button>
+	    <div id="video" style="opacity: 0; display: none;">
 
-      <!--div class="vide"> </div-->
-      <div class="carrousel-wrapper">
-        <div class="carrousel-item" id="video1">
-        	<!--div class="YT" id="yt1"></div-->
-          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/ChnqeU4Wot8?si=Gf1lXb3hUVAO6OK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <div class="description">
-            <h2> Underwater </h2>
-            <p class="legende">Enfant, Vincent a failli se noyer et perdre la vie. Dès lors, il a embrassé ses expériences passées et les a canalisées dans son art comme un moyen de s'épanouir, transformant l'impact de son accident en source d'inspiration. Courage et sensibilité poétique nourrissent son travail. A travers son histoire, ce court métrage interprète de manière poétique son travail et sa vision de la photographie. <br> <br>
-            Musique : Onizzm</p>
-          </div>
-           <div class="nav_carrousel"><span>&#9679; </span><span>&#9675; </span><span>&#9675; </span><span>&#9675; </span><span>&#9675; </span></div>
-        </div>
+	        <button class="arrow" onclick="prevSlide()" style="position: absolute; top: calc(var(--haut) * 23); left: 2vw;" >&#10094;</button>
+	        <button class="arrow" onclick="nextSlide()" style="position: absolute; top: calc(var(--haut) * 23); right: 2vw;">&#10095;</button>
 
-        <div class="carrousel-item" id="video2">
-          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/nd2F2Zr-O00?si=fNtZuZaN4xZgkwuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <div class="description">
-            <h2> Edward Theme  </h2>
-            <p class="legende">Après avoir revu "Edouard aux mains d'argents" j'ai été fasciné par la musique, j'ai donc tout simplement voulu humblement réinterpréter ce thème magnifique à ma manière.<br> <br>
-            Musique : Onizzm</p>
-          </div>
-           <div class="nav_carrousel"><span>&#9675;</span><span>&#9679; </span><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span></div>
-        </div>
+	      <!--div class="vide"> </div-->
+	      <div class="carrousel-wrapper">
+	        <div class="carrousel-item" id="video1">
+	        	<!--div class="YT" id="yt1"></div-->
+	          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/ChnqeU4Wot8?si=Gf1lXb3hUVAO6OK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	          <div class="description">
+	            <h2> Underwater </h2>
+	            <p class="legende">Enfant, Vincent a failli se noyer et perdre la vie. Dès lors, il a embrassé ses expériences passées et les a canalisées dans son art comme un moyen de s'épanouir, transformant l'impact de son accident en source d'inspiration. Courage et sensibilité poétique nourrissent son travail. A travers son histoire, ce court métrage interprète de manière poétique son travail et sa vision de la photographie. <br> <br>
+	            Musique : Onizzm</p>
+	          </div>
+	           <div class="nav_carrousel"><span>&#9679; </span><span>&#9675; </span><span>&#9675; </span><span>&#9675; </span><span>&#9675; </span></div>
+	        </div>
 
-        <div class="carrousel-item" id="video3">
-         <iframe class="YT" src="https://www.youtube-nocookie.com/embed/btJl2A6giCs?si=7fXHvVZ_lG8QVwvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <div class="description">
-            <h2> Black Spiderman  </h2>
-            <p class="legende">Rien à dire je voulais juste absolument faire un thème de super-héros bien évidemment très inspiré par Danny Elfman<br> <br>
-            Musique : Onizzm</p>
-          </div>
-          <div class="nav_carrousel"><span>&#9675;</span><span>&#9675;</span><span>&#9679; </span><span>&#9675;</span><span>&#9675;</span></div>
-        </div>
+	        <div class="carrousel-item" id="video2">
+	          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/nd2F2Zr-O00?si=fNtZuZaN4xZgkwuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	          <div class="description">
+	            <h2> Edward Theme  </h2>
+	            <p class="legende">Après avoir revu "Edouard aux mains d'argents" j'ai été fasciné par la musique, j'ai donc tout simplement voulu humblement réinterpréter ce thème magnifique à ma manière.<br> <br>
+	            Musique : Onizzm</p>
+	          </div>
+	           <div class="nav_carrousel"><span>&#9675;</span><span>&#9679; </span><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span></div>
+	        </div>
 
-        <div class="carrousel-item" id="video4">
-          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/FfoB-yVmAKE?si=K36gLw0h1VwbrE5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <div class="description">
-            <h2> Odyssée des ilussions - Ending  </h2>
-            <p class="legende">Générique de fin produit pour le film étudiant d'une amie.<br> <br>
-            Musique : Onizzm</p>
-          </div>
-          <div class="nav_carrousel"><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span><span>&#9679; </span><span>&#9675;</span></div>
-        </div>
-        <div class="carrousel-item" id="video5">
-          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/HRf_fw3-Tsk?si=wdyga00GHEsKhXbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <div class="description">
-            <h2> Alouan - Pièce Violette </h2>
-            <p class="legende">Une enfant, Sawda, se retrouve confrontée aux inquiétudes et émotions menées par l’arrivée de l’adolescence. Subissant ces changements, elle tente de s’accrocher à son imagination et sa vision enfantine du monde afin de préserver son innocence. Les différentes étapes de son évolution, représentés à travers plusieurs pièces comme la violette symbole de nostalgie et d'insouciance.<br> <br>
-            Musique : Onizzm</p>
-          </div>
-           <div class="nav_carrousel"><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span><span>&#9679; </span></div>
-        </div>
-        <div class="nav_carrousel"></div>
-      </div>
+	        <div class="carrousel-item" id="video3">
+	         <iframe class="YT" src="https://www.youtube-nocookie.com/embed/btJl2A6giCs?si=7fXHvVZ_lG8QVwvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	          <div class="description">
+	            <h2> Black Spiderman  </h2>
+	            <p class="legende">Rien à dire je voulais juste absolument faire un thème de super-héros bien évidemment très inspiré par Danny Elfman<br> <br>
+	            Musique : Onizzm</p>
+	          </div>
+	          <div class="nav_carrousel"><span>&#9675;</span><span>&#9675;</span><span>&#9679; </span><span>&#9675;</span><span>&#9675;</span></div>
+	        </div>
 
-      
-      </div>
-    </div>
+	        <div class="carrousel-item" id="video4">
+	          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/FfoB-yVmAKE?si=K36gLw0h1VwbrE5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	          <div class="description">
+	            <h2> Odyssée des ilussions - Ending  </h2>
+	            <p class="legende">Générique de fin produit pour le film étudiant d'une amie.<br> <br>
+	            Musique : Onizzm</p>
+	          </div>
+	          <div class="nav_carrousel"><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span><span>&#9679; </span><span>&#9675;</span></div>
+	        </div>
+	        <div class="carrousel-item" id="video5">
+	          <iframe class="YT" src="https://www.youtube-nocookie.com/embed/HRf_fw3-Tsk?si=wdyga00GHEsKhXbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	          <div class="description">
+	            <h2> Alouan - Pièce Violette </h2>
+	            <p class="legende">Une enfant, Sawda, se retrouve confrontée aux inquiétudes et émotions menées par l’arrivée de l’adolescence. Subissant ces changements, elle tente de s’accrocher à son imagination et sa vision enfantine du monde afin de préserver son innocence. Les différentes étapes de son évolution sont représentés à travers plusieurs pièces comme la violette, symbole de nostalgie et d'insouciance.<br> <br> 
+	            Musique : Onizzm</p>
+	          </div>
+	           <div class="nav_carrousel"><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span><span>&#9675;</span><span>&#9679; </span></div>
+	        </div>
+	        <div class="nav_carrousel"></div>
+	      </div>
 
-     <div class="instabas" style="margin-right: 20px; margin-top: auto;"> <a class="contain" href="https://www.instagram.com/onizzm/" target="_blank"> <img src="image/iconinsta.png" class="contain" > </a> </div>
-    <div id="bio" style="opacity: 1;">
-  		
-		<div id="item1" class="jracontemavie">
-			<div class="titrebio">
-				<h2> Éxperience </h2>
+	      
+	      </div>
+
+	     <div class="instabas" style="margin-right: 20px; margin-top: auto;"> <a class="contain" href="https://www.instagram.com/onizzm/" target="_blank"> <img src="image/iconinsta.png" class="contain" > </a> </div>
+
+	    <div id="bio" style="opacity: 1;">
+
+	    	<div id="item3" class="jracontemavie">
+				<div class="titrebio">
+					<h2> Ambitions </h2>
+				</div>
+				<p> Je rêve de composer pour un long métrage depuis que j'ai découvert les musiques de Danny Elfmann. Mais je suis également attiré par l'univers plus intimiste des mini séries faites «maison» comme "bref" ou "straperre longo i bordi". Finalement, simplement partager ma passion et mon enthousiasme afin de créer de belles œuvres.
+				</p>
 			</div>
-			<ul>
-				<li> 16 années de pratique de piano dont 8 années de cours. 10 ans de guitare en autodidacte et quelques bases de violon. </li>
-				<li> Diplômé depuis 2024 de la SAE institute à Genève en tant qu’ingénieur du son. </li>
-				<li> Et surtout pratique de la MAO, mixage et sound-design, en autodidacte tout les jours depuis 10 ans. </li>
-			</ul>
-		</div>
 
-    <div id="item2" class="jracontemavie">
-    	<div class="titrebio">
-        	<h2> Louis </h2> 
-        		<!--div class="lieninsta"> <a class="contain" href="https://www.instagram.com/onizzm/" target="_blank"> <img src="image/iconinsta.png" class="contain" > </a> </div-->
-      </div>
-        <p>  J'ai 24 ans et j'ai commencé la musique à 8 ans quand j'ai retrouvé le premier clavier de ma mère sous un lit. J’ai commencer par poduire de l'électro inspiré par Flume, Odesza ou Tycho en développant ma passion pour le sound design, et évolue vers de la musique plus acoustique porté sur l’émotion comme celle de Bon Iver.
-      </p>
-    </div>
+			 <div id="item2" class="jracontemavie">
+	    	<div class="titrebio">
+	        	<h2> Louis </h2> 
+	        		<!--div class="lieninsta"> <a class="contain" href="https://www.instagram.com/onizzm/" target="_blank"> <img src="image/iconinsta.png" class="contain" > </a> </div-->
+	      </div>
+	        <p>  J'ai 24 ans et j'ai commencé la musique à 8 ans quand j'ai retrouvé le premier clavier de ma mère sous un lit. J’ai commencé par poduire de l'électro inspiré par Flume, Odesza ou Tycho en développant ma passion pour le sound design et évolue vers de la musique plus acoustique portée sur l’émotion comme celle de Bon Iver.
+	      </p>
+	   		</div>
+	  		
+			<div id="item1" class="jracontemavie">
+				<div class="titrebio">
+					<h2> Éxperience </h2>
+				</div>
+				<ul>
+					<li> 16 années de pratique de piano dont 8 années de cours. 10 ans de guitare en autodidacte et quelques bases de violon. </li>
+					<li> Diplômé depuis 2024 de la SAE Institute à Genève en tant qu’ingénieur du son. </li>
+					<li> Pratique de la MAO, mixage et sound-design, en autodidacte depuis 10 ans. </li>
+				</ul>
+			</div>  
+	    </div>
 
-		<div id="item3" class="jracontemavie">
-			<div class="titrebio">
-				<h2> Ambitions </h2>
-			</div>
-			<p> Je rêve de composer pour un long métrage depuis que j'ai découvert les musiques de Danny Elfmann. Mais je suis également attiré par l'univers plus intimiste des mini séries faites «maison» comme "bref" ou "straperre longo i bordi". Finalement, simplement partager ma passion et mon enthousiasme afin de créer de belles oeuvres.
-			</p>
-		</div>
-    </div>
-
-    <div id="footer">© Site développé par Onizzm</div>
-
+	    <div id="footer">© Site développé par Onizzm</div>
+	</div>
 
     <script> device();</script>
+
+    <script>
+    window.addEventListener('load', function() {
+    charge();
+});
+
+    </script>
 
 
     <script>

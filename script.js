@@ -37,6 +37,18 @@ function device() {
 
 }
 
+
+async function charge() {
+	document.getElementById('loader').style.opacity = 0;
+	await sleep(400);
+    document.getElementById('loader').style.display = 'none';
+    // Afficher le contenu principal
+    document.getElementById('footer').style.marginTop = '0px';
+    document.getElementById('content').style.display = 'block';
+    await sleep(500);
+    document.getElementById('content').style.opacity = 1;
+}
+
 async function animation() {
 
 		window.scrollTo({
