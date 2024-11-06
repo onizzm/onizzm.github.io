@@ -39,6 +39,7 @@ function device() {
 
 
 async function charge() {
+	await sleep(1000);
 	document.getElementById('loader').style.opacity = 0;
 	await sleep(400);
     document.getElementById('loader').style.display = 'none';
