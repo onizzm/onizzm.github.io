@@ -24,7 +24,7 @@
 
     <div id="content">
 	  	<div id="baniere" style="opacity: 1;">
-	  		<img src="image/baniere_portfolio.png" style> 
+	  		<img id="imgbaniere" src="image/baniere_portfolio.png" style> 
 	    </div>
 
 	    <div id="marge"> </div>
@@ -140,9 +140,9 @@
     <script> device();</script>
 
     <script>
-    window.addEventListener('load', function() {
-    charge();
-});
+    	document.getElementById('imgbaniere').onload = function() {
+    		    charge();
+    	};
 
     </script>
 
