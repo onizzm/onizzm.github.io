@@ -39,13 +39,13 @@ function device() {
 
 
 async function charge() {
+	await sleep(500);
 	document.getElementById('loader').style.opacity = 0;
-	await sleep(1000);
+	await sleep(500);
     document.getElementById('loader').style.display = 'none';
     // Afficher le contenu principal
     document.getElementById('footer').style.marginTop = '0px';
-    document.getElementById('content').style.display = 'block';
-    await sleep(500);
+    //await sleep(400);
     document.getElementById('content').style.opacity = 1;
 }
 
