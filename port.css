@@ -78,7 +78,7 @@ ul {
 }
 
 li {
-	margin-bottom: calc(var(--haut) * 1.8);
+	/*margin-bottom: calc(var(--haut) * 1.8);*/
 }
 
 h1 {
@@ -265,6 +265,7 @@ img {
 
 .carrousel-item {
     min-width: 100%;
+   /*display: flex;*/
 }
 
 
@@ -275,6 +276,15 @@ img {
 	display: flex;
 	justify-content: center;
 	font-size: calc(var(--haut)*2);
+}
+
+.zizi {
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 526px;
+    width: 936px;
 }
 
 
@@ -288,17 +298,44 @@ img {
 
 
 .YT {
+	z-index: 1;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
-	height: 526px;
-	width: 936px;
+    height: 526px;
+    width: 936px;
 }
 
-.description {
+.info {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: calc(var(--haut) * 3);
+	font-family: "Junge", cursive;
+	cursor: help;
+}
+
+#description {
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+.dordi {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    height: 526px;
+    width: 936px;
+	/*height: calc(var(--haut) * 62);
+	width: calc(var(--haut) * 110);*/
+    padding: 3px;
+    margin: auto;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 0;
 }
 
 .legende {
@@ -306,7 +343,6 @@ img {
 	font-size: calc(var(--haut) * 2);
 	line-height: 110%;
 	margin-right: 20px;
-	margin-left: 20px;
 	text-align: justify;
 }
 

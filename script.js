@@ -15,11 +15,23 @@ function device() {
 
 			description.forEach((element) => { 
     // Exemple : change la couleur de fond de chaque élément
-    		element.style.display = 'none';
+    		element.classList.add('dordi');
 			});
 		}
 
 		if (window.innerHeight > window.innerWidth) { //version telephone
+			const zizi = document.querySelectorAll('.zizi');
+
+			zizi.forEach((element) => {
+				element.style.display = 'block';
+			});
+
+			const info = document.querySelectorAll('.info');
+
+			info.forEach((element) => {
+				element.style.display = 'none';
+			});
+
 			const arrow = document.querySelectorAll('.arrow');
 
 			arrow.forEach((element) => {
@@ -133,8 +145,6 @@ function showSlide(index) {
     if (index < 0) currentIndex = items.length - 1;
     const offset = -currentIndex * 100; // chaque item fait 100% de largeur
     document.querySelector('.carrousel-wrapper').style.transform = `translateX(${offset}%)`;
-
-
 }
 
 function nextSlide() {
