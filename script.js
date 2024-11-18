@@ -14,32 +14,40 @@ function device() {
 	    	const description = document.querySelectorAll('.description');
 
 			description.forEach((element) => { 
-    // Exemple : change la couleur de fond de chaque élément
     		element.classList.add('dordi');
+			});
+
+			const youtube = document.querySelectorAll('.YT');
+			youtube.forEach(element => {
+				element.style.height = 'calc(var(--haut) * 62)';
+				element.style.width = 'calc(var(--haut) * 110)';
+			});
+
+			const zi = document.querySelectorAll('.zi');
+			zi.forEach(element => {
+				element.style.height = 'calc(var(--haut) * 62)';
+				element.style.width = 'calc(var(--haut) * 110)';
 			});
 		}
 
 		if (window.innerHeight > window.innerWidth) { //version telephone
-			const zizi = document.querySelectorAll('.zizi');
+			const zi = document.querySelectorAll('.zi');
 
-			zizi.forEach((element) => {
+			zi.forEach((element) => {
 				element.style.display = 'block';
 			});
 
 			const info = document.querySelectorAll('.info');
-
 			info.forEach((element) => {
 				element.style.display = 'none';
 			});
 
 			const arrow = document.querySelectorAll('.arrow');
-
 			arrow.forEach((element) => {
 				element.style.display = 'none';
 			});
 
 			const nav = document.querySelectorAll('.nav_carrousel');
-
 			nav.forEach((element) => {
 				element.style.position = 'absolute';
 			});
@@ -156,5 +164,3 @@ function prevSlide() {
     currentIndex--;
     showSlide(currentIndex);
 }
-
-

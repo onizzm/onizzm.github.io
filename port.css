@@ -278,7 +278,7 @@ img {
 	font-size: calc(var(--haut)*2);
 }
 
-.zizi {
+.zi {
 	display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -327,11 +327,9 @@ img {
 .dordi {
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
-    height: 526px;
-    width: 936px;
-	/*height: calc(var(--haut) * 62);
-	width: calc(var(--haut) * 110);*/
-    padding: 10px;
+	height: calc(var(--haut) * 58);
+	width: calc(var(--haut) * 106);
+    padding: calc(var(--haut) * 2);
     margin: auto;
     opacity: 0;
     transition: 0.3s;
