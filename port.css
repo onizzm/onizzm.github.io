@@ -331,7 +331,7 @@ img {
     width: 936px;
 	/*height: calc(var(--haut) * 62);
 	width: calc(var(--haut) * 110);*/
-    padding: 3px;
+    padding: 10px;
     margin: auto;
     opacity: 0;
     transition: 0.3s;
