@@ -1,5 +1,8 @@
+console.log("fichier ui");
+
 document.getElementById('imgbaniere').onload = function() {
-	    charge();
+	console.log("onload");
+	charge();
 };    
 
 const video = document.getElementById("video");

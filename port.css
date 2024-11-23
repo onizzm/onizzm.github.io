@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
 
 
-body {
+html, body {
     margin: 0;
-    max-height: 100vh;
     transition: 1s;
     background-size: cover;
     background-position: center;
@@ -139,7 +138,7 @@ img {
 }
 
 #bouton_port button {
-	font-family: Helvetica Neue;
+	font-family: "Helvetica Neue";
 	cursor: pointer;
 	padding: 10px;
 	display: block;
@@ -152,7 +151,7 @@ img {
 	margin-right: auto;
 	margin-top: 0px;
 	margin-bottom: 60px;
-	border: solid calc(var(--haut) * 0.4);
+	border: solid calc(var(--haut) * 0.5);
 	border-color: black;
 }
 
@@ -363,16 +362,13 @@ img {
 	right: 20px;
 }
 
-
 #footer {
-	width: 100vw;
-	bottom: 0%;
+	position: relative;
+	width: 100%;
+	bottom: 0;
 	padding-bottom: calc(var(--haut) * 1);
 	font-family: Helvetica Neue;
-	font-size: calc(var(--haut) * 2);
+	font-size: calc(var(--haut) * 1.8);
 	text-align: center;
-	transition: 1s;
-	
-	/*background-color: white;*/
 }
 

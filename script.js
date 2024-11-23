@@ -12,10 +12,11 @@ function hauteur() {
 function device() {
 	    if (window.innerHeight < window.innerWidth) { //version Ordi
 	    	const description = document.querySelectorAll('.description');
-
 			description.forEach((element) => { 
     		element.classList.add('dordi');
 			});
+
+			document.getElementById('footer').style.position = 'absolute';
 
 			const youtube = document.querySelectorAll('.YT');
 			youtube.forEach(element => {
@@ -32,6 +33,8 @@ function device() {
 
 		if (window.innerHeight > window.innerWidth) { //version telephone
 			const zi = document.querySelectorAll('.zi');
+
+			document.getElementById('footer').classList.add('footertel');
 
 			zi.forEach((element) => {
 				element.style.display = 'block';
@@ -59,7 +62,8 @@ function device() {
 
 
 async function charge() {
-	await sleep(1000);
+	console.log("charge");
+	await sleep(500);
 	document.getElementById('loader').style.opacity = 0;
 	await sleep(500);
     document.getElementById('loader').style.display = 'none';
@@ -82,6 +86,7 @@ async function animation() {
 		var video = document.getElementById("video");
 		var titre = document.getElementById("titre");
 		var marge = document.getElementById("marge");
+
 		var footer = document.getElementById('footer');
 
 		//mettre les transitions//
@@ -105,7 +110,7 @@ async function animation() {
 			await sleep(400);
 			video.style.opacity = 1;
 			await sleep(500);
-			document.getElementById("titre_bouton").innerHTML = "AFFICHER BIO";
+			document.getElementById("titre_bouton").innerHTML = "&#x270E; AFFICHER BIO";
 
 
 
@@ -115,7 +120,9 @@ async function animation() {
 			
 			document.body.classList.remove('no-scroll');
 			await sleep(500);
-			footer.style.position = 'relative';
+			if (window.innerHeight > window.innerWidth) {
+				footer.style.position = 'relative';
+			};
 			video.style.display = "none";
 			//marge.style.display = "block";
 			bio.style.display = "flex";
@@ -125,7 +132,7 @@ async function animation() {
 			baniere.style.opacity = 1;
 			bio.style.opacity = 1;
 			await sleep(400);
-			document.getElementById("titre_bouton").innerHTML = "DECOUVRIR LE PORTFOLIO";
+			document.getElementById("titre_bouton").innerHTML = "➢ DECOUVRIR LE PORTFOLIO";
 
 
 			
