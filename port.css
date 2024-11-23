@@ -326,8 +326,8 @@ img {
 .dordi {
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
-	height: calc(var(--haut) * 58);
-	width: calc(var(--haut) * 106);
+	height: calc(var(--haut) * 58.1);
+	width: calc(var(--haut) * 107.1);
     padding: calc(var(--haut) * 2);
     margin: auto;
     opacity: 0;
