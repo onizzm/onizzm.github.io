@@ -64,7 +64,7 @@ p {
 	padding: 0px;
 	font-family: Helvetica Neue;
 	line-height: 140%;
-	font-size: calc(var(--haut) * 2.4);
+	font-size: calc(var(--haut) * 2.6);
 }
 
 ul {

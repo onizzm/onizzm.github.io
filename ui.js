@@ -36,6 +36,20 @@ video.addEventListener('touchend', () => {
     isMoving = false; // Réinitialiser le flag lorsque le toucher se termine
 });
 
+
+document.addEventListener('keydown', (event) => {
+	if (window.getComputedStyle(document.getElementById('video')).style.display === 'flex') {
+	console.log('proutzerrr');
+		if (event.key === "ArrowLeft") {
+		prevSlide();
+		} else if (event.key === "ArrowRight") {
+		nextSlide();
+		};
+	};
+
+});
+
+
 const info = document.querySelectorAll('.info');
 const des = document.querySelectorAll('.description');
 
@@ -55,5 +69,10 @@ info.forEach(div => {
 	});
 
 });
+
+
+if (window.innerHeight < window.innerWidth) {
+	window.addEventListener('resize', hauteur);
+}
 
 
