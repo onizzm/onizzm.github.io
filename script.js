@@ -132,7 +132,7 @@ async function animation() {
 			baniere.style.opacity = 1;
 			bio.style.opacity = 1;
 			await sleep(400);
-			document.getElementById("titre_bouton").innerHTML = "➢ DECOUVRIR LE PORTFOLIO";
+			document.getElementById("titre_bouton").innerHTML = "➢ DECOUVRIR LA MUSIQUE";
 
 
 			
